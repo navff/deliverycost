@@ -16,7 +16,7 @@ function init(from, to, cost, mincost) {
                 // Добавим заголовок панели.
                 showHeader: true,
                 title: 'Пишите адрес с городом',
-                maxWidth: 400,
+                maxWidth: 310,
             }
         }),
         zoomControl = new ymaps.control.ZoomControl({
