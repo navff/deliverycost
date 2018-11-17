@@ -27,16 +27,14 @@
 <body>
 <div class="container-fluid">
     <div id="map"></div>
-    <div class="hidden">
-        <div class="row">
-            <div class="col-2">
-                <a href="http://33kita.ru"><img class="logo" src="i/logo.png"></a>
-            </div>
-            <div class="col-9">
-                <a href="http://amocrm.33kita.ru">Автоматизация отделов продаж</a>,
-                <a href="http://b24.33kita.ru">внедрение Битрикс24</a><br/>
-                консалтинг, крупные внедрения по всей территории РФ удалённо
-            </div>
+    <div class="row">
+        <div class="col-2 col-md-1">
+            <a href="http://33kita.ru"><img class="logo" src="i/logo.png"></a>
+        </div>
+        <div class="col-10 col-md-11">
+            <a href="http://amocrm.33kita.ru">Автоматизация отделов продаж</a>,
+            <a href="http://b24.33kita.ru">внедрение Битрикс24</a>,<br/>
+            консалтинг, крупные внедрения по всей территории РФ удалённо
         </div>
     </div>
 </div>
