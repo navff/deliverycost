@@ -1,13 +1,11 @@
 
-function init(from, to, cost) {
+function init(from, to, cost, mincost) {
     console.log(from);
     console.log(cost);
     // Стоимость за километр.
     if(!cost) {cost = 30}
-    var DELIVERY_TARIFF = cost,
-        // Минимальная стоимость.
-        MINIMUM_COST = 250,
-        myMap = new ymaps.Map('map', {
+    if (!mincost) {mincost = 250}
+    var myMap = new ymaps.Map('map', {
             center: [65, 65],
             zoom: 13,
             controls: []
@@ -74,6 +72,6 @@ function init(from, to, cost) {
     });
     // Функция, вычисляющая стоимость доставки.
     function calculate(routeLength) {
-        return Math.max(routeLength * DELIVERY_TARIFF, MINIMUM_COST);
+        return Math.max(routeLength * cost, mincost);
     }
 }

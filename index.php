@@ -11,47 +11,13 @@
     <script src="main.js" type="text/javascript"></script>
     <script>
         ymaps.ready(function () {
-            init("<?= $_GET["from"] ?>", "<?= $_GET["to"] ?>", "<?= $_GET["cost"] ?>");
+            init("<?= $_GET["from"] ?>",
+                "<?= $_GET["to"] ?>",
+                "<?= $_GET["cost"] ?>",
+                "<?= $_GET["mincost"] ?>");
         });
     </script>
-    <style>
-        @font-face {
-            font-family: Blogger; /* Имя шрифта */
-            src: url(f/Bloggersanslight.ttf); /* Путь к файлу со шрифтом */
-        }
-
-        html, body {
-            width: 100%;
-            height: 100%;
-            padding: 0;
-            margin: 0;
-            font-family: "Blogger", "Calibri Light", "Tahoma", "Arial"  ;
-        }
-
-        #map {
-            width: 100%;
-            height: 90%;
-            padding: 0;
-            margin: 0;
-        }
-        .container{overflow:hidden;}
-
-        .footer {
-            white-space:nowrap;
-            padding: 5px 15px;
-            height: 10%;
-        }
-        .footer div{display:inline-block;}
-
-        .logo{
-            height: 50px;
-        }
-
-        .promo {
-            margin: 0 0 8px 10px;
-            width: 60%;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css" type="text/css" id="StyleLink" title="CSS" media="all" />
 </head>
 <body>
 <div id="map"></div>
