@@ -3,6 +3,7 @@ function init(from, to, cost) {
     console.log(from);
     console.log(cost);
     // Стоимость за километр.
+    if(!cost) {cost = 30}
     var DELIVERY_TARIFF = cost,
         // Минимальная стоимость.
         MINIMUM_COST = 250,
